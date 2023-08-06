@@ -3,93 +3,57 @@ import styles from './page.module.css'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
+    <div>
+
+      {/* Navbar */}
+      <div className='navbar-container'>
         <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+          <p className='navbar-title'>Anugerah Mandiri</p>
+        </div>
+        <div className='navbar-menu'>
+          <button>
+            Home
+          </button>
+          <button>
+            Portfolio
+          </button>
+          <button>
+            Gallery
+          </button>
+          <button>
+            Tentang Kami
+          </button>
+        </div>
+        <div>
+          <button className='navbar-contact-us'>
+            Hubungi Kami!
+          </button>
         </div>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      {/* Header */}
+      <div className='header-container shapedividers_com-2341'>
+
       </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      {/* Body */}
+      <div style={{marginTop: 20, marginBottom: 40}}>
+        <p className='header-1'>Portfolio Jasa Pasang Kaca Film Gedung</p>
+        <p className='sub-header-1'>Sudah ada 100+ klien puas dengan pekerjaan kami</p>
       </div>
-    </main>
+
+      <div className='row-gallery'>
+        <Image src='/06122013024.jpg' height={400} width={400} alt='jasa pasang kaca film gedung' />
+        <Image src='/06122013029.jpg' height={400} width={400} alt='jasa pasang kaca film gedung' />
+        <Image src='/18112013015.jpg' height={400} width={400} alt='jasa pasang kaca film gedung' />
+      </div>
+
+      <div className='row-gallery'>
+        <Image src='/20112013016.jpg' height={400} width={400} alt='jasa pasang kaca film gedung' />
+        <Image src='/dsfsddsfdsfdsfdsfsfdsfdsf.jpg' height={400} width={400} alt='jasa pasang kaca film gedung' />
+        <Image src='/IMG_20220823_181716.jpg' height={400} width={400} alt='jasa pasang kaca film gedung' />
+      </div>
+      
+    </div>
   )
 }
