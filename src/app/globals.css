@@ -8,7 +8,7 @@ p {
   justify-content: space-between;
   padding: 20px;
   align-items: center;
-  background: rgba(0,0,0,.7);
+  background: rgba(0, 0, 0, 0.7);
   backdrop-filter: saturate(180%) blur(10px);
   left: 0;
   right: 0;
@@ -24,12 +24,13 @@ p {
   color: #fff;
 }
 
-.navbar-menu > button {
+.navbar-menu > a {
   border: none;
   background: transparent;
   font-size: 16px;
   cursor: pointer;
   color: #fff;
+  margin: 0px 10px;
 }
 
 .navbar-contact-us {
@@ -83,12 +84,23 @@ p {
 }
 
 .header-1 {
-  color: rgba(0,0,0,.8);
-  font-family: "Poppins",Sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Poppins", Sans-serif;
   font-size: 3rem;
   font-weight: 700;
   line-height: 1em;
   text-align: center;
+}
+
+.header-1::after {
+  content: "";
+  height: 5px;
+  width: 10%;
+  background: #0078d4;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 50px;
 }
 
 .sub-header-1 {
@@ -108,7 +120,8 @@ p {
 
 .divider-middle {
   height: 500px;
-  background-image: url("/IMG-20190828-WA0002.jpg");
+  /* background-image: url("/IMG-20190828-WA0002.jpg"); */
+  background-color: #434343;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -125,18 +138,35 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
 
+.client-title {
+  font-weight: 600;
+}
+
+.deskripsi-tentang-kami {
+  margin: 0px 10%;
+  font-size: 24px;
+}
+
+.btn-hubungi-kami {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+  cursor: pointer;
 }
 
 /* start divider */
 
-.shapedividers_com-2341{
-  overflow:hidden;
-  position:relative;
-  }
-  .shapedividers_com-2341::before{ 
-  content:'';
-  font-family:'shape divider from ShapeDividers.com';
+.shapedividers_com-2341 {
+  overflow: hidden;
+  position: relative;
+}
+.shapedividers_com-2341::before {
+  content: "";
+  font-family: "shape divider from ShapeDividers.com";
   position: absolute;
   z-index: 3;
   pointer-events: none;
@@ -144,25 +174,25 @@ p {
   bottom: -0.1vw;
   left: -0.1vw;
   right: -0.1vw;
-  top: -0.1vw; 
+  top: -0.1vw;
   background-size: 100% 90px;
-  background-position: 50% 100%;  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -0.1 35.28 2.17" preserveAspectRatio="none"><path d="M35.28.31c-2.57.84-7.68.3-11.8.43-4.1.12-6.85.61-9.57.28C11.18.69 8.3-.16 5.3.02 2.3.22.57.85 0 .87v1.2h35.28z" fill="%23ffffff"/></svg>'); 
-  }
-  
-  @media (min-width:2100px){
-  .shapedividers_com-2341::before{
-  background-size: 100% calc(2vw + 90px);
-  }
-  }
+  background-position: 50% 100%;
+  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -0.1 35.28 2.17" preserveAspectRatio="none"><path d="M35.28.31c-2.57.84-7.68.3-11.8.43-4.1.12-6.85.61-9.57.28C11.18.69 8.3-.16 5.3.02 2.3.22.57.85 0 .87v1.2h35.28z" fill="%23ffffff"/></svg>');
+}
 
-  
-.shapedividers_com-7830{
-  overflow:hidden;
-  position:relative;
+@media (min-width: 2100px) {
+  .shapedividers_com-2341::before {
+    background-size: 100% calc(2vw + 90px);
   }
-  .shapedividers_com-7830::before{ 
-  content:'';
-  font-family:'shape divider from ShapeDividers.com';
+}
+
+.shapedividers_com-7830 {
+  overflow: hidden;
+  position: relative;
+}
+.shapedividers_com-7830::before {
+  content: "";
+  font-family: "shape divider from ShapeDividers.com";
   position: absolute;
   z-index: 3;
   pointer-events: none;
@@ -170,15 +200,37 @@ p {
   bottom: -0.1vw;
   left: -0.1vw;
   right: -0.1vw;
-  top: -0.1vw; 
+  top: -0.1vw;
   background-size: 100% 90px;
-  background-position: 50% 0%;  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M0 1c3.17.8 7.29-.38 10.04-.55 2.75-.17 9.25 1.47 12.67 1.3 3.43-.17 4.65-.84 7.05-.87 2.4-.02 5.52.88 5.52.88V0H0z" fill="%23ffffff"/></svg>'); 
-  }
-  
-  @media (min-width:2100px){
-  .shapedividers_com-7830::before{
-  background-size: 100% calc(2vw + 90px);
-  }
-  }
+  background-position: 50% 0%;
+  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M0 1c3.17.8 7.29-.38 10.04-.55 2.75-.17 9.25 1.47 12.67 1.3 3.43-.17 4.65-.84 7.05-.87 2.4-.02 5.52.88 5.52.88V0H0z" fill="%23ffffff"/></svg>');
+}
 
-  /* end divider */
+@media (min-width: 2100px) {
+  .shapedividers_com-7830::before {
+    background-size: 100% calc(2vw + 90px);
+  }
+}
+
+/* end divider */
+
+/* Parallax */
+.parallaxContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.parallaxBackground {
+  background-image: url("/IMG20220725170442.jpg");
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: #fff;
+  text-shadow: 3px 3px 4px #000;
+  margin-top: 100px;
+}
